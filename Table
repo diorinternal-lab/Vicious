@@ -1,0 +1,209 @@
+getgenv().vicious = {
+    ['Global'] = {
+        ['Enabled'] = true,
+        ['Check'] = {
+            ['Checks'] = {
+                ['Knocked'] = true,
+                ['Self-Knocked'] = true,
+                ['Visible'] = true,
+                ['ForceField'] = true,
+                ['Crew'] = true,
+                ['Anti Trip'] = true,
+            },
+        },
+        ['Keybind'] = 'C',
+    },
+
+    ['Silent Aimbot'] = {
+        ['Enabled'] = true,
+        ['HitParts'] = 'Closest Point',
+
+        ['FOV'] = {
+            ['Enabled'] = true,
+            ['Show FOV'] = true,
+            ['Type'] = 'Box',
+            ['Size'] = {
+                ['X'] = 4,
+                ['Y'] = 4,
+                ['Z'] = 4,  
+            },
+        },
+
+        ['Closest Point'] = {
+            ['Mode'] = 'Advanced',
+            ['Point Scale'] = 0.12,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0, 
+        },
+    },
+
+    ['Camera Aimbot'] = {
+        ['Enabled'] = true,
+        ['HitParts'] = 'Closest Part',
+        ['Smoothing'] = 0.523,
+
+        ['FOV'] = {
+            ['Enabled'] = false,
+            ['Type'] = '3D',
+            ['Size'] = {
+                ['X'] = 100,
+                ['Y'] = 100,
+                ['Z'] = 100,
+            },
+        },
+
+        ['Closest Point'] = {
+            ['Mode'] = 'Advanced',
+            ['Point Scale'] = 0.0,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
+        },
+    },
+
+    ['TriggerBot'] = {
+        ['Enabled'] = true,
+        ['HitParts'] = 'Closest Part',
+        ['Delay Interval'] = 0.005,
+        ['Radius'] = '435',
+        ['Distance'] = 600,
+
+        ['FOV'] = {
+            ['Enabled'] = true,
+            ['Type'] = 'Box',
+            ['Size'] = {
+            ['X'] = 4.5,
+            ['Y'] = 3.7,
+            ['Z'] = 3.7,
+            },
+        },
+
+        ['Closest Point'] = {
+            ['Mode'] = 'Advanced',
+            ['Point Scale'] = 0.10,
+        },
+
+        ['Velocity Calculation'] = {
+            ['Enabled'] = false,
+            ['Magnitude'] = 70,
+        },
+    },
+
+   ['Weapon Modifications'] = {
+        ['Spread Modifications'] = {
+            ['Enabled'] = true,
+            ['Weapons'] = {
+                ['[Double-Barrel SG]'] = 0,
+                ['[TacticalShotgun]'] = 0,
+                ['[Shotgun]'] = 0,
+                ['[DrumShotgun]'] = 0,
+            },
+        },
+
+        ['Bullet TP'] = {
+            ['Enabled'] = true,
+            ['Range'] = 'Infinite',
+            ['Keybind'] = 'E',
+            ['Auto Target'] = true,
+            ['Target Part'] = 'Head',
+            ['Wall Check'] = false,
+        },
+
+        ['Rapid Fire'] = {
+            ['Enabled'] = true,
+            ['Mode'] = 'DasHood',
+        },
+
+        ['Delay'] = {
+            ['Enabled'] = false,
+            ['Weapons'] = {
+                ['[Double-Barrel SG]'] = 100,
+                ['[Revolver]'] = 100,
+                ['[TacticalShotgun]'] = 100
+            }
+        },
+
+        ['Hitscan'] = {
+            ['Enabled'] = true,
+            ['Width'] = '1',
+            ['Length'] = '1',
+        },
+
+        ['Skin Changer'] = {
+            ['Enabled'] = false,
+            ['Weapons'] = {
+                ['[Revolver]'] = 'Golden Age',
+                ['[Double-Barrel SG]'] = 'Galaxy',
+                ['[TacticalShotgun]'] = 'Shadow',
+                ['[Knife]'] = 'GPO-Knife',
+            },
+        },
+    },
+
+    ['Inventory Sorter'] = {
+        ['Enabled'] = false,
+        ['Keybind'] = 'P',
+        ['Weapons'] = {
+            [1] = '[Revolver]',
+            [2] = '[Knife]',
+            [3] = '[TacticalShotgun]',
+            [4] = '[Double-Barrel SG]',
+        },
+    },
+
+    ['ESP'] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'G',
+        ['Mode'] = 'Both',
+        ['Team Check'] = true,
+
+        ['Color Configuration'] = {
+            ['Color'] = Color3.fromRGB(255,255,255),
+            ['Target Color'] = {
+                ['Color'] = Color3.fromRGB(255,0,0),
+                ['Size'] = 12.8,
+            },
+        },
+    },
+
+    ['Movement Modification'] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'T',
+        ['Multiplier'] = 35,
+
+        ['Conditions'] = {
+            ['[Normal]'] = '50',
+            ['[Reloading]'] = '50',
+            ['[Low-Health]'] = '50',
+        },
+    },
+
+    ['World Modifications'] = {
+        ['Color Settings'] = {
+            ['Enabled'] = false,
+            ['Type'] = 'Normal',
+            ['Color'] = Color3.fromRGB(255,255,255),
+        },
+    },
+
+    ['Character Modifications'] = {
+        ['No Jump Cooldown'] = {
+            ['Enabled'] = true,
+        },
+
+        ['Headless'] = {
+            ['Enabled'] = true,
+        },
+
+        ['Korblox'] = {
+            ['Enabled'] = true,
+        },
+    },
+}
