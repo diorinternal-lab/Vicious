@@ -1,25 +1,25 @@
 getgenv().vicious = {
     ['Global'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Check'] = {
             ['Checks'] = {
-                ['Knocked'] = true,
-                ['Self-Knocked'] = true,
-                ['Visible'] = true,
-                ['ForceField'] = true,
-                ['Crew'] = true,
-                ['Anti Trip'] = true,
+                ['Knocked'] = false,
+                ['Self-Knocked'] = false,
+                ['Visible'] = false,
+                ['ForceField'] = false,
+                ['Crew'] = false,
+                ['Anti Trip'] = false,
             },
         },
         ['Keybind'] = 'C',
     },
 
     ['Silent Aimbot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['HitParts'] = 'Closest Point',
 
         ['FOV'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Size'] = {
                 ['X'] = 4,
                 ['Y'] = 4,
@@ -40,11 +40,23 @@ getgenv().vicious = {
     },
 
     ['Camera Aimbot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['HitParts'] = 'Closest Part',
         ['Smoothing'] = 0.523,
         ['Type'] = 'Linear',
         ['Mode'] = 'In',
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
+        },
+
+        ['Camera Modes'] = {
+            ['First Person'] = false,
+            ['Third Person'] = false,
+            ['Shift-Locked'] = false,
+        },
 
         ['FOV'] = {
             ['Enabled'] = false,
@@ -54,38 +66,26 @@ getgenv().vicious = {
                 ['Z'] = 100,
             },
         },
-
-        ['Closest Point'] = {
-            ['Mode'] = 'Advanced',
-            ['Point Scale'] = 0.0,
-        },
-
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0,
-        },
     },
 
-    ['TriggerBot'] = {
-        ['Enabled'] = true,
-        ['HitParts'] = 'Closest Part',
+    ['Trigger Bot'] = {
+        ['Enabled'] = false,
         ['Delay Interval'] = 0.005,
-        ['Radius'] = '435',
-        ['Distance'] = 600,
+
+        ['Weapons'] = {
+			'[Double-Barrel SG]',
+			'[Revolver]',
+			'[TacticalShotgun]',
+            '[Silencer]'
+		},
 
         ['FOV'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Size'] = {
                 ['X'] = 4.5,
                 ['Y'] = 3.7,
                 ['Z'] = 3.7,
             },
-        },
-
-        ['Closest Point'] = {
-            ['Mode'] = 'Advanced',
-            ['Point Scale'] = 0.10,
         },
 
         ['Velocity Calculation'] = {
@@ -94,9 +94,10 @@ getgenv().vicious = {
         },
     },
 
-   ['Weapon Modifications'] = {
+    ['Weapon Modifications'] = {
         ['Spread Modifications'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
+            
             ['Weapons'] = {
             ['Mode'] = 'HoodCustoms',
                 ['[Double-Barrel SG]'] = 0,
@@ -107,14 +108,14 @@ getgenv().vicious = {
         },
 
         ['Bullet TP'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Range'] = 'Infinite',
             ['Keybind'] = 'E',
             ['Target Part'] = 'Head',
         },
 
         ['Rapid Fire'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Mode'] = 'DasHood',
         },
 
@@ -128,7 +129,7 @@ getgenv().vicious = {
         },
 
         ['Hitscan'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Width'] = '1',
             ['Length'] = '1',
         },
@@ -156,10 +157,10 @@ getgenv().vicious = {
     },
 
     ['ESP'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Keybind'] = 'G',
         ['Mode'] = 'Both',
-        ['Team Check'] = true,
+        ['Team Check'] = false,
 
         ['Color Configuration'] = {
             ['Color'] = Color3.fromRGB(255,255,255),
@@ -171,7 +172,7 @@ getgenv().vicious = {
     },
 
     ['Movement Modification'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Keybind'] = 'T',
         ['Multiplier'] = 35,
 
@@ -192,15 +193,15 @@ getgenv().vicious = {
 
     ['Character Modifications'] = {
         ['No Jump Cooldown'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
 
         ['Headless'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
 
         ['Korblox'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
     },
 }
