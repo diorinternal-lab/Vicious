@@ -1,4 +1,4 @@
-getgenv().vicious = {
+getgenv().dior = {
     ['Global'] = {
         ['Enabled'] = false,
         ['Check'] = {
@@ -98,7 +98,7 @@ getgenv().vicious = {
             ['Enabled'] = false,
             
             ['Weapons'] = {
-            ['Mode'] = 'HoodCustoms',
+                ['Mode'] = 'HoodCustoms',
                 ['[Double-Barrel SG]'] = 0,
                 ['[TacticalShotgun]'] = 0,
                 ['[Shotgun]'] = 0,
@@ -113,12 +113,17 @@ getgenv().vicious = {
             ['Target Part'] = 'Head',
         },
 
-        ['Delay'] = {
+        ['Force Hit'] = {
             ['Enabled'] = false,
-			['Mode'] = 'DasHood'
+            ['Hit Part'] = 'Head',
+            ['Keybind'] = 'T'
+        },
+
+        ['Delay'] = {
+            ['Enabled'] = true,
             ['Weapons'] = {
-                ['[Double-Barrel SG]'] = 100,
-                ['[Revolver]'] = 100,
+                ['[Double-Barrel SG]'] = 80,
+                ['[Revolver]'] = 30,
                 ['[TacticalShotgun]'] = 100
             }
         },
@@ -130,7 +135,7 @@ getgenv().vicious = {
         },
 
         ['Skin Changer'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Weapons'] = {
                 ['[Revolver]'] = 'Golden Age',
                 ['[Double-Barrel SG]'] = 'Galaxy',
@@ -176,14 +181,14 @@ getgenv().vicious = {
 
     ['Character Modifications'] = {
         ['Movement Modification'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Keybind'] = 'T',
             ['Multiplier'] = 35,
 
             ['Conditions'] = {
-                ['[Normal]'] = '50',
-                ['[Reloading]'] = '50',
-                ['[Low-Health]'] = '50',
+                ['[Normal]'] = '22',
+                ['[Reloading]'] = '22',
+                ['[Low-Health]'] = '22',
             },
         },
         
