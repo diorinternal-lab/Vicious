@@ -1,4 +1,4 @@
-getgenv().dior = {
+getgenv().banged = {
     ['Global'] = {
         ['Enabled'] = false,
         ['Check'] = {
@@ -73,10 +73,10 @@ getgenv().dior = {
         ['Delay Interval'] = 0.005,
 
         ['Weapons'] = {
-			'[Double-Barrel SG]',
-			'[Revolver]',
-			'[TacticalShotgun]',
-		},
+            '[Double-Barrel SG]',
+            '[Revolver]',
+            '[TacticalShotgun]',
+        },
 
         ['FOV'] = {
             ['Enabled'] = false,
@@ -103,6 +103,8 @@ getgenv().dior = {
                 ['[TacticalShotgun]'] = 0,
                 ['[Shotgun]'] = 0,
                 ['[DrumShotgun]'] = 0,
+                ['[SMG]'] = 0,
+                ['[P90]'] = 0,
             },
         },
 
@@ -116,7 +118,16 @@ getgenv().dior = {
         ['Force Hit'] = {
             ['Enabled'] = false,
             ['Hit Part'] = 'Head',
-            ['Keybind'] = 'T'
+            ['Keybind'] = 'T',
+        },
+
+        ['Bullet Redirection'] = {
+            ['Enabled'] = false,
+            ['Prediction'] = {
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
+            },
         },
 
         ['Delay'] = {
@@ -124,8 +135,16 @@ getgenv().dior = {
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 80,
                 ['[Revolver]'] = 30,
-                ['[TacticalShotgun]'] = 100
-            }
+                ['[TacticalShotgun]'] = 100,
+                ['[SMG]'] = 10,
+                ['[P90]'] = 9,
+                ['[AK47]'] = 15,
+                ['[AR]'] = 14,
+                ['[Silencer AR]'] = 14,
+                ['[Drum Gun]'] = 11,
+                ['[AUG]'] = 13,
+                ['[Rifle]'] = 13,
+            },
         },
 
         ['Hitscan'] = {
@@ -153,6 +172,8 @@ getgenv().dior = {
             [2] = '[Knife]',
             [3] = '[TacticalShotgun]',
             [4] = '[Double-Barrel SG]',
+            [5] = '[SMG]',
+            [6] = '[MP5]',
         },
     },
 
@@ -161,11 +182,14 @@ getgenv().dior = {
         ['Keybind'] = 'G',
         ['Mode'] = 'Both',
         ['Team Check'] = false,
+        ['Locked Indicator'] = true,
+        ['Name'] = true,
+        ['Distance'] = false,
 
         ['Color Configuration'] = {
-            ['Color'] = Color3.fromRGB(255,255,255),
+            ['Color'] = Color3.fromRGB(255, 255, 255),
             ['Target Color'] = {
-                ['Color'] = Color3.fromRGB(255,0,0),
+                ['Color'] = Color3.fromRGB(255, 0, 0),
                 ['Size'] = 12.8,
             },
         },
@@ -175,7 +199,7 @@ getgenv().dior = {
         ['Color Settings'] = {
             ['Enabled'] = false,
             ['Type'] = 'Normal',
-            ['Color'] = Color3.fromRGB(255,255,255),
+            ['Color'] = Color3.fromRGB(255, 255, 255),
         },
     },
 
