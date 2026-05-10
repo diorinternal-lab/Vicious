@@ -8,7 +8,7 @@ shared.Amiri = {
         ['Enabled'] = true,
         ['Hitparts'] = 'UpperTorso',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Smoothing'] = 0.0523,
+        ['Smoothing'] = 0.0723,
         ['Type'] = 'Linear',
 
         ['Prediction'] = {
@@ -24,11 +24,11 @@ shared.Amiri = {
         },
 
         ['FOV'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Size'] = {
-                ['X'] = 10,
-                ['Y'] = 10,
-                ['Z'] = 10,
+                ['X'] = 5,
+                ['Y'] = 6,
+                ['Z'] = 7,
             },
         },
     },
@@ -71,11 +71,11 @@ shared.Amiri = {
         },
 
         ['FOV'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Size'] = {
-                ['X'] = 6.5,
-                ['Y'] = 6.7,
-                ['Z'] = 6.7,
+                ['X'] = 1.9,
+                ['Y'] = 3.5,
+                ['Z'] = 2,
             },
         },
 
@@ -101,10 +101,14 @@ shared.Amiri = {
             ['Enabled'] = true,
         },
 
+        ['Wallbang'] = {
+            ['Enabled'] = true,
+        },
+
         ['Range Modification'] = {
             ['Enabled'] = true,
             ['Value'] = 10000,
-            ['Bypasspos'] = 10,
+            ['Bypass Distance'] = 10,
         },
 
         ['Railgun'] = {
@@ -137,10 +141,10 @@ shared.Amiri = {
         },
 
         ['Delay'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 80,
-                ['[Revolver]'] = 100,
+                ['[Revolver]'] = 40,
                 ['[TacticalShotgun]'] = 100,
                 ['[SMG]'] = 10,
                 ['[P90]'] = 9,
@@ -165,36 +169,38 @@ shared.Amiri = {
     },
 
     ['Inventory Sorter'] = {
-        ['Enabled'] = false,
-        ['Keybind'] = 'F2',
+        ['Enabled'] = true,
+        ['Keybind'] = 'K',
         ['Weapons'] = {
-            [1] = '[Revolver]',
-            [2] = '[Knife]',
-            [3] = '[TacticalShotgun]',
-            [4] = '[Double-Barrel SG]',
+            [1] = '[Knife]',
+            [2] = '[Revolver]',
+            [3] = '[Double-Barrel SG]',
+            [4] = '[TacticalShotgun]',
         },
     },
 
     ['Purchase'] = {
         ['Enabled'] = true,
-        ['RageArmor'] = true,
-        ['Loadout'] = true,
+        ['Autobuy'] = true,
+        ['Keybind'] = 'V',
+        ['ArmorType'] = 'Full Armor',
+        ['RageArmor'] = false,
     },
 
     ['Visuals'] = {
         ['Enabled'] = true,
-        ['Header'] = '',
+        ['Header'] = 'Amiri.wtf',
         ['Keybind'] = 'G',
         ['TeamCheck'] = false,
         ['LockedIndicator'] = true,
         ['Distance'] = false,
         ['Name'] = true,
-        ['Radar'] = true,
+        ['Radar'] = false,
         ['KeybindList'] = true,
 
         ['Colors'] = {
             ['Default'] = Color3.fromRGB(255, 255, 255),
-            ['Target'] = Color3.fromRGB(255, 192, 203),
+            ['Target'] = Color3.fromRGB(255, 55, 0),
             ['Header'] = Color3.fromRGB(24, 155, 12),
             ['KeybindListColor'] = Color3.fromRGB(255, 55, 0),
         },
@@ -213,10 +219,10 @@ shared.Amiri = {
         ['Movement Modification'] = {
             ['Enabled'] = true,
             ['Keybind'] = 'T',
-            ['Multiplier'] = 32,
+            ['Multiplier'] = 20,
 
             ['Conditions'] = {
-                ['[Normal]'] = '22',
+                ['[Normal]'] = '20',
                 ['[Reloading]'] = '22',
                 ['[Low-Health]'] = '22',
             },
