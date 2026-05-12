@@ -1,86 +1,91 @@
+--]] Anything with -- lines means it works, and everything that doesn't have -- lines means it is in development.
+-- thank reaper for developing the best cheat of 2026
+-- @v_z_z
+--]] AMIRI ON TOP!
 shared.Amiri = {
     ['Global'] = {
-        ['Enabled'] = true,
-        ['Keybind'] = 'C',
+        ['Enabled'] = true, -- this needs to be on to enable the entire script
+        ['Keybind'] = 'C', -- global keybind for camera aimbot, silent aim, and trigger bot.
     },
 
-    ['Camera Aimbot'] = {
-        ['Enabled'] = true,
-        ['Hitparts'] = 'UpperTorso',
-        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Smoothing'] = 0.0523,
-        ['Type'] = 'Linear',
+    ['Camera Aimbot'] = { -- working
+        ['Enabled'] = true, -- turns camera aimbot on
+        ['Hitparts'] = 'Closest Part', -- what parts you want the camera aimbot to look at 
+        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'}, -- safety checks
+        ['Smoothing'] = 0.00223, -- smoothness of the camera aimbot
+        ['Type'] = 'Linear', -- basically making the aimbot curve for more smoothness
 
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0,
+        ['Prediction'] = { -- predictions
+            ['X'] = 0, -- values
+            ['Y'] = 0, -- values
+            ['Z'] = 0, -- values
         },
 
-        ['Camera Modes'] = {
-            ['First Person'] = true,
-            ['Third Person'] = false,
-            ['Shift-Locked'] = true,
+        ['Camera Modes'] = { -- example, if shift-locked is set to false, camera aimbot wont 
+            ['First Person'] = true, -- this makes the camera able to enable while in first person
+            ['Third Person'] = false, -- this makes the camera able to enable while in third person
+            ['Shift-Locked'] = true, -- this makes the camera able to enable while shift locked
         },
 
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true, -- visualizes the triggerbots box fov size
             ['Size'] = {
-                ['X'] = 12,
-                ['Y'] = 12,
-                ['Z'] = 12,
+                ['X'] = 1, -- values
+                ['Y'] = 2, -- values
+                ['Z'] = 3, -- values
             },
         },
     },
 
-    ['Silent Aimbot'] = {
+    ['Silent Aimbot'] = { -- working
         ['Enabled'] = true,
         ['Hitparts'] = 'Closest Part',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
 
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true, -- visualizes the triggerbots box fov size
             ['Size'] = {
-                ['X'] = 5,
-                ['Y'] = 5,
-                ['Z'] = 5,
+                ['X'] = 1, -- values
+                ['Y'] = 1, -- values
+                ['Z'] = 1, -- values
             },
         },
 
-        ['Closest Point'] = {
-            ['Mode'] = 'Advanced',
-            ['Point Scale'] = 0.12,
+        ['Closest Point'] = { -- working
+            ['Mode'] = 'Advanced', -- point mode
+            ['Point Scale'] = 0.12, -- scale of how big points will be
         },
 
         ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0,
+            ['X'] = 0, -- values
+            ['Y'] = 0, -- values
+            ['Z'] = 0, -- values
         },
     },
 
-    ['Trigger Bot'] = {
-        ['Enabled'] = true,
+    ['Trigger Bot'] = { -- working
+        ['Enabled'] = true, -- turns on or off
+        ['Mode'] = 'Hitbox', -- FOV or Hitbox
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Delay Interval'] = 0.062,
+        ['Delay Interval'] = 0, -- this is the delay changer for triggerbot
 
-        ['Weapons'] = {
+        ['Weapons'] = { -- you can use specific weapons for triggerbot to work on
             '[Double-Barrel SG]',
             '[Revolver]',
             '[TacticalShotgun]',
             '[Deagle]',
         },
 
-        ['FOV'] = {
-            ['Enabled'] = false,
-            ['Size'] = {
-                ['X'] = 1.9,
-                ['Y'] = 2,
-                ['Z'] = 2.1,
+        ['FOV'] = { -- the size of the fov box
+            ['Enabled'] = true, -- visualizes the triggerbots box fov size
+            ['Size'] = { -- size of the box
+                ['X'] = 1, -- values
+                ['Y'] = 1.89, -- values
+                ['Z'] = 2.1, -- values
             },
         },
 
-        ['Velocity Calculation'] = {
+        ['Velocity Calculation'] = { -- don't worry about this explanation later
             ['Enabled'] = false,
             ['Magnitude'] = 70,
         },
@@ -106,10 +111,10 @@ shared.Amiri = {
             ['Enabled'] = true,
         },
 
-        ['Range Modification'] = {
-            ['Enabled'] = true,
-            ['Value'] = 100000,
-            ['Bypass Distance'] = 10,
+        ['Range Modification'] = { -- working
+            ['Enabled'] = true, -- turns on or off
+            ['Value'] = 100000, -- value of how far your bullet will travel
+            ['Bypass Distance'] = 10, -- dont worry about this it doesn't matter
         },
 
         ['Railgun'] = {
@@ -141,24 +146,16 @@ shared.Amiri = {
             },
         },
 
-        ['Delay'] = {
+        ['Delay'] = { -- working but shoots blanks, ]] i will fix
             ['Enabled'] = false,
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 40,
-                ['[Revolver]'] = 100,
+                ['[Revolver]'] = 90,
                 ['[TacticalShotgun]'] = 40,
-                ['[SMG]'] = 10,
-                ['[P90]'] = 9,
-                ['[AK47]'] = 15,
-                ['[AR]'] = 14,
-                ['[Silencer AR]'] = 14,
-                ['[Drum Gun]'] = 11,
-                ['[AUG]'] = 13,
-                ['[Rifle]'] = 13,
             },
         },
 
-        ['Skin Changer'] = {
+        ['Skin Changer'] = { -- working in da hood and hood customs ]] SOON
             ['Enabled'] = false,
             ['Weapons'] = {
                 ['[Revolver]'] = '',
@@ -169,10 +166,10 @@ shared.Amiri = {
         },
     },
 
-    ['Inventory Sorter'] = {
-        ['Enabled'] = true,
-        ['Keybind'] = 'K',
-        ['Weapons'] = {
+    ['Inventory Sorter'] = { -- working
+        ['Enabled'] = true, -- turns on or off
+        ['Keybind'] = 'K', -- keybind that sorts inventory
+        ['Weapons'] = { -- specific weapons / tools, you can add onto this list
             [1] = '[Knife]',
             [2] = '[Revolver]',
             [3] = '[Double-Barrel SG]',
@@ -180,71 +177,76 @@ shared.Amiri = {
         },
     },
 
-    ['Purchase'] = {
-        ['Enabled'] = false,
-        ['Autobuy'] = true,
-        ['Keybind'] = 'V',
-        ['ArmorType'] = 'Full Armor',
-        ['RageArmor'] = false,
+    ['Purchase'] = { -- working
+        ['Enabled'] = true, -- turns on or off
+        ['Autobuy'] = true, -- autobuys on spawn / when u join game
+        ['Keybind'] = 'V', -- keybind that purchases armor
+        ['ArmorType'] = 'Full Armor', -- you can select armor types, full armor is for das hood.
+        ['RageArmor'] = false, -- autobuys whenever armor is depleted / at 0 and spam buys whenever u keep gettin it popped
     },
 
-    ['Visuals'] = {
-        ['Enabled'] = true,
-        ['Header'] = 'Amiri.wtf',
-        ['Keybind'] = 'G',
-        ['TeamCheck'] = false,
-        ['LockedIndicator'] = true,
-        ['Distance'] = false,
-        ['Name'] = true,
-        ['Radar'] = true,
-        ['KeybindList'] = true,
+    ['Visuals'] = { -- working
+        ['Enabled'] = true, -- turns on or off
+        ['Header'] = 'Amiri.wtf', -- this shows a header on top of keybindlist
+        ['Keybind'] = 'G', -- keybind to toggle on esp
+        ['TeamCheck'] = false, -- if inside of a group, it wont show ur teammates
+        ['LockedIndicator'] = true, -- shows "[Locked]" when locked onto a player
+        ['Distance'] = false, -- shows the distance of players
+        ['Name'] = true, -- shows the display names of players
+        ['Radar'] = true, -- shows a radar with tracer lines and shows their health with the circles changing colors, green = full, red = low, black = dead
+        ['KeybindList'] = true, -- shows the keybindlist for enabled features
 
-        ['Colors'] = {
-            ['Default'] = Color3.fromRGB(255, 255, 255),
-            ['Target'] = Color3.fromRGB(255, 55, 0),
-            ['Header'] = Color3.fromRGB(24, 155, 12),
-            ['KeybindListColor'] = Color3.fromRGB(255, 55, 0),
+        ['Colors'] = { -- working
+            ['Default'] = Color3.fromRGB(255, 255, 255), -- colors for default names / unlocked targets
+            ['Target'] = Color3.fromRGB(255, 55, 0), -- colors for targeted players
+            ['Header'] = Color3.fromRGB(24, 155, 12), -- colors for the header 
+            ['KeybindListColor'] = Color3.fromRGB(255, 55, 0), -- colors for the keybindlist
         },
 
-        ['Size'] = 12.8,
+        ['Size'] = 12.8, -- size of the name esp
     },
 
-    ['World Modifications'] = {
-        ['Color Settings'] = {
-            ['Enabled'] = true,
-            ['Intensity'] = 3,
+    ['World Modifications'] = { -- working
+        ['Color Settings'] = { -- working
+            ['Enabled'] = true, -- turns color settings on or off
+            ['Intensity'] = 2.4607, -- the intensity of the color settings
         },
     },
 
-    ['Character Modifications'] = {
-        ['Movement Modification'] = {
-            ['Enabled'] = true,
-            ['Keybind'] = 'T',
-            ['Multiplier'] = 30,
+    ['Character Modifications'] = { -- working
+        ['Movement Modification'] = { -- working
+            ['Enabled'] = false, -- turns speedwalk on or off
+            ['Keybind'] = 'T', -- keybind to toggle speed
+            ['Multiplier'] = 30, -- multiplies the condition speedwalk example, multipler at 30, speed at 50, = 600 speed
 
             ['Conditions'] = {
-                ['[Normal]'] = '20',
-                ['[Reloading]'] = '22',
-                ['[Low-Health]'] = '22',
+                ['[Normal]'] = '20', -- value of normal speed
+                ['[Reloading]'] = '22', -- value of speed when reloading
+                ['[Low-Health]'] = '22', -- value of speed when at low health
             },
         },
-        ['Jump Modification'] = {
-            ['Enabled'] = false,
-            ['Value'] = 500,
+        ['Jump Modification'] = { -- working
+            ['Enabled'] = false, -- working
+            ['Value'] = 500, -- value of how high you will jump
+        },
+
+        ['Avatar Changer'] = {
+            ['Enabled'] = true,
+            ['Username'] = '',
         },
     },
 
     ['Extras'] = { 
-        ['No Jump Cooldown'] = { -- 
+        ['No Jump Cooldown'] = {
             ['Enabled'] = true,
         },
 
-        ['Headless'] = {
-            ['Enabled'] = true,
+        ['Headless'] = { -- working
+            ['Enabled'] = true, -- turns headless on or off
         },
 
-        ['Korblox'] = {
-            ['Enabled'] = false,
+        ['Korblox'] = { -- working
+            ['Enabled'] = false, -- turns korblox on or off
         },
 
         ['No Recoil'] = {
