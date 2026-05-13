@@ -67,7 +67,7 @@ shared.Amiri = {
         ['Enabled'] = true, -- turns on or off
         ['Mode'] = 'Hitbox', -- FOV or Hitbox
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Delay Interval'] = 0, -- this is the delay changer for triggerbot
+        ['Delay Interval'] = 0.2, -- this is the delay changer for triggerbot
 
         ['Weapons'] = { -- you can use specific weapons for triggerbot to work on
             '[Double-Barrel SG]',
@@ -96,8 +96,8 @@ shared.Amiri = {
             ['Enabled'] = false,
             
             ['Weapons'] = {
-                ['[Double-Barrel SG]'] = 0,
-                ['[TacticalShotgun]'] = 0,
+                ['[Double-Barrel SG]'] = 0.5,
+                ['[TacticalShotgun]'] = 0.5,
                 ['[Shotgun]'] = 0,
                 ['[DrumShotgun]'] = 0,
             },
@@ -198,9 +198,9 @@ shared.Amiri = {
 
         ['Colors'] = { -- working
             ['Default'] = Color3.fromRGB(255, 255, 255), -- colors for default names / unlocked targets
-            ['Target'] = Color3.fromRGB(255, 55, 0), -- colors for targeted players
-            ['Header'] = Color3.fromRGB(24, 155, 12), -- colors for the header 
-            ['KeybindListColor'] = Color3.fromRGB(255, 55, 0), -- colors for the keybindlist
+            ['Target'] = Color3.fromRGB(249, 223, 255), -- colors for targeted players
+            ['Header'] = Color3.fromRGB(249, 223, 255), -- colors for the header 
+            ['KeybindListColor'] = Color3.fromRGB(249, 223, 255), -- colors for the keybindlist
         },
 
         ['Size'] = 12.8, -- size of the name esp
@@ -215,7 +215,7 @@ shared.Amiri = {
 
     ['Character Modifications'] = { -- working
         ['Movement Modification'] = { -- working
-            ['Enabled'] = false, -- turns speedwalk on or off
+            ['Enabled'] = true, -- turns speedwalk on or off
             ['Keybind'] = 'T', -- keybind to toggle speed
             ['Multiplier'] = 30, -- multiplies the condition speedwalk example, multipler at 30, speed at 50, = 600 speed
 
@@ -227,7 +227,8 @@ shared.Amiri = {
         },
         ['Jump Modification'] = { -- working
             ['Enabled'] = false, -- working
-            ['Value'] = 500, -- value of how high you will jump
+            ['Value'] = 50000, -- value of how high you will jump
+            ['Keybind'] = '', -- keybind to toggle jump
         },
 
         ['Avatar Changer'] = {
@@ -246,7 +247,7 @@ shared.Amiri = {
         },
 
         ['Korblox'] = { -- working
-            ['Enabled'] = false, -- turns korblox on or off
+            ['Enabled'] = true, -- turns korblox on or off
         },
 
         ['No Recoil'] = {
